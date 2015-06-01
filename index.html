@@ -4,10 +4,10 @@
   <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
     <title>Digital Publishing Interest Group</title>
-    <link media="screen" type="text/css" href="http://www.w3.org/2005/10/w3cdoc.css"
-      rel="stylesheet" />
-    <link href="http://www.w3.org/Guide/pubrules-style.css" type="text/css" rel="stylesheet" />
-    <link href="http://www.w3.org/2006/02/charter-style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://www.w3.org/2005/10/w3cdoc.css" type="text/css"
+      media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://www.w3.org/Guide/pubrules-style.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.w3.org/2006/02/charter-style.css" />
     <style type="text/css">
 #warning {  
   font-size: 124%;  -epub-text-transform: lowercase;
@@ -51,7 +51,7 @@ ul#navbar li {
     <p id="warning">DRAFT, under discussion, without any commitment that this
       charter would be ever accepted!</p>
     <div id="template">
-      <ul style="font-size: small" id="navbar">
+      <ul id="navbar" style="font-size: small">
         <li><a href="#scope">Scope</a></li>
         <li><a href="#deliverables">Deliverables</a></li>
         <li><a href="#coordination">Dependencies and Liaisons</a></li>
@@ -61,8 +61,8 @@ ul#navbar li {
         <li><a href="#patentpolicy">Patent Disclosures </a></li>
         <li><a href="#about">About this Charter</a></li>
       </ul>
-      <p><a shape="rect" href="http://www.w3.org/"><img width="72" height="48" src="http://www.w3.org/Icons/w3c_home"
-            alt="W3C" /></a>  </p>
+      <p><a href="http://www.w3.org/" shape="rect"><img height="48" width="72" alt="W3C"
+            src="http://www.w3.org/Icons/w3c_home" /></a>  </p>
       <h1 id="title">Digital Publishing Interest Group Charter</h1>
       <p class="mission">The <strong>mission</strong> of the Digital Publishing
         Interest Group is to provide a forum for experts in the digital
@@ -85,34 +85,34 @@ ul#navbar li {
       <div class="noprint">
         <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/64149/join">Join
             the Digital Publishing Interest Group</a><span style="font-style: italic;">.</span><span
-            style="font-style: italic;" class="toadd"><br />
+            class="toadd" style="font-style: italic;"><br />
           </span></p>
       </div>
       <table class="summary-table">
         <tbody>
           <tr id="Duration">
-            <th colspan="1" rowspan="1">End date</th>
-            <td colspan="1" rowspan="1">1 September 2017</td>
+            <th rowspan="1" colspan="1">End date</th>
+            <td rowspan="1" colspan="1">1 September 2017</td>
           </tr>
           <tr>
-            <th colspan="1" rowspan="1">Confidentiality</th>
-            <td colspan="1" rowspan="1">Proceedings are <a shape="rect" href="/2005/10/Process-20051014/comm.html#confidentiality-levels">
-                public </a></td>
+            <th rowspan="1" colspan="1">Confidentiality</th>
+            <td rowspan="1" colspan="1">Proceedings are <a href="/2005/10/Process-20051014/comm.html#confidentiality-levels"
+                shape="rect"> public </a></td>
           </tr>
           <tr>
-            <th colspan="1" rowspan="1">Proposed Initial Chairs</th>
-            <td colspan="1" rowspan="1">Markus Gylling (IDPF and the Daisy
+            <th rowspan="1" colspan="1">Proposed Initial Chairs</th>
+            <td rowspan="1" colspan="1">Markus Gylling (IDPF and the Daisy
               Consortium)<br />
               Tzviya Siegman (John Wiley &amp; Sons, Inc.)</td>
           </tr>
           <tr>
-            <th colspan="1" rowspan="1">Initial Team Contacts<br />
+            <th rowspan="1" colspan="1">Initial Team Contacts<br />
               (FTE %: 40)</th>
-            <td colspan="1" rowspan="1"> Ivan Herman (0.4fte)</td>
+            <td rowspan="1" colspan="1"> Ivan Herman (0.4fte)</td>
           </tr>
           <tr>
-            <th colspan="1" rowspan="1">Usual Meeting Schedule</th>
-            <td colspan="1" rowspan="1">Teleconferences: Weekly <br />
+            <th rowspan="1" colspan="1">Usual Meeting Schedule</th>
+            <td rowspan="1" colspan="1">Teleconferences: Weekly <br />
               Face-to-face: As needed </td>
           </tr>
         </tbody>
@@ -141,23 +141,20 @@ ul#navbar li {
             Portable Documents for the Open Web Platform: EPUB+WEB”</a> as
           follows:</p>
         <blockquote>
-          <p>Our vision for EPUB+WEB is that portable documents become fully
-            native citizens of the Open Web Platform. In this vision, the
-            current format- and workflow-level separation between
-            offline/portable (EPUB) and online (Web) document publishing is
-            diminished to zero. These are merely two dynamic manifestations of
-            the same publication: content authored with online use as the
-            primary mode can easily be saved by the user for offline reading in
-            portable document form. Content authored primarily for use as a
-            portable document can be put online, without any need for
-            refactoring the content. Publishers can choose to utilize either or
-            both of these publishing modes, and users can choose either or both
-            of these consumption modes. Essential features flow seamlessly
-            between online and offline modes; examples include cross-references,
-            user annotations, access to online databases, as well as licensing
-            and rights management.</p>
+          <p>Our vision […] is that portable documents become fully native
+            citizens of the Open Web Platform. In this vision, the current
+            format- and workflow-level separation between offline/portable […]
+            and online […] document publishing is diminished to zero. These are
+            merely two dynamic manifestations of the same publication: content
+            authored with online use as the primary mode can easily be saved by
+            the user for offline reading in portable document form. […]
+            Publishers can choose to utilize either or both of these publishing
+            modes, and users can choose either or both of these consumption
+            modes. Essential features flow seamlessly between online and offline
+            modes; examples include cross-references, user annotations, access
+            to online databases, as well as licensing and rights management.</p>
         </blockquote>
-        <p>@@@@change the quote to remove EPUB+WEB reference@@@Turning this vision into reality, however, requires significant
+        <p>Turning this vision into reality, however, requires significant
           technical work. Some of the issues are already addressed in existing
           W3C Working Groups (e.g., the CSS, HTML5, or the Web Applications
           Working Groups) but it is very important that those activities take
@@ -403,12 +400,11 @@ ul#navbar li {
         <h2 id="participation">Participation</h2>
         <p>Participation in the Digital Publishing Interest Group is open to all
           W3C Members. Individuals who wish to participate as Invited Experts
-          (i.e., they do not represent a W3C Member) should refer to the <a shape="rect"
-            href="http://www.w3.org/2004/08/invexp.html">policy for approval of
-            Invited Experts</a>. Invited Experts in this group are not granted
-          access to Member-only information. Effective participation in the
-          Interest Group is expected to consume one day work per week for each
-          participant. </p>
+          (i.e., they do not represent a W3C Member) should refer to the <a href="http://www.w3.org/2004/08/invexp.html"
+            shape="rect">policy for approval of Invited Experts</a>. Invited
+          Experts in this group are not granted access to Member-only
+          information. Effective participation in the Interest Group is expected
+          to consume one day work per week for each participant. </p>
         <p>The group may decide to create Task Forces within the Interest Group
           to concentrate on major relevant constituencies, for example
           electronic books, journal/magazine publishing, or educational
@@ -417,9 +413,8 @@ ul#navbar li {
         <p>There are no minimum requirements for participation in this group.
           Participants are strongly encouraged to take advantage of frequent
           opportunities to review and comment on deliverables from other groups.</p>
-        <p>The Chair may call occasional meetings consistent with the <a shape="rect"
-            href="/Consortium/Process/policies#GeneralMeetings">W3C Process
-            requirements for meetings</a>.</p>
+        <p>The Chair may call occasional meetings consistent with the <a href="/Consortium/Process/policies#GeneralMeetings"
+            shape="rect">W3C Process requirements for meetings</a>.</p>
       </div>
       <div class="communication">
         <h2 id="communication">Communication</h2>
@@ -464,30 +459,29 @@ ul#navbar li {
         <p>The Digital Publishing Interest Group provides an opportunity to
           share perspectives on the topic addressed by this charter. W3C reminds
           Interest Group participants of their obligation to comply with patent
-          disclosure obligations as set out in <a shape="rect" href="http://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure">Section
-            6</a> of the W3C Patent Policy. While the Interest Group does not
-          produce Recommendation-track documents, when Interest Group
-          participants review Recommendation-track specifications from Working
-          Groups, the patent disclosure obligations do apply.</p>
+          disclosure obligations as set out in <a href="http://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure"
+            shape="rect">Section 6</a> of the W3C Patent Policy. While the
+          Interest Group does not produce Recommendation-track documents, when
+          Interest Group participants review Recommendation-track specifications
+          from Working Groups, the patent disclosure obligations do apply.</p>
         <p>For more information about disclosure obligations for this group,
-          please see the <a shape="rect" href="http://www.w3.org/2004/01/pp-impl/">W3C
+          please see the <a href="http://www.w3.org/2004/01/pp-impl/" shape="rect">W3C
             Patent Policy Implementation</a>.</p>
       </div>
       <h2 id="about">About this Charter</h2>
       <p>This charter for the Digital Publishing Interest Group has been created
-        according to <a shape="rect" href="http://www.w3.org/Consortium/Process/#ReqsAllGroups">section
-          6.1</a> of the <a shape="rect" href="http://www.w3.org/Consortium/Process">Process
-          Document</a>. In the event of a conflict between this document or the
-        provisions of any charter and the W3C Process, the W3C Process shall
-        take precedence.</p>
+        according to <a href="http://www.w3.org/Consortium/Process/#ReqsAllGroups"
+          shape="rect">section 6.1</a> of the <a href="http://www.w3.org/Consortium/Process"
+          shape="rect">Process Document</a>. In the event of a conflict between
+        this document or the provisions of any charter and the W3C Process, the
+        W3C Process shall take precedence.</p>
       <hr />
       <address> Ivan Herman, ivan@w3.org </address>
-      <p class="copyright"><a shape="rect" href="/Consortium/Legal/ipr-notice#Copyright"
-          rel="Copyright">Copyright</a> © 2015 <a shape="rect" href="/"><acronym
-            title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a
-          shape="rect" href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>,
-        <a shape="rect" href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
-        <a shape="rect" href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>),
+      <p class="copyright"><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright"
+          shape="rect">Copyright</a> © 2015 <a href="/" shape="rect"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup>
+        (<a href="http://www.csail.mit.edu/" shape="rect"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>,
+        <a href="http://www.ercim.org/" shape="rect"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+        <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>),
         All Rights Reserved.</p>
       <p>$Date:  $</p>
     </div>
