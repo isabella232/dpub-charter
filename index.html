@@ -4,10 +4,10 @@
   <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
     <title>Digital Publishing Interest Group</title>
-    <link rel="stylesheet" href="http://www.w3.org/2005/10/w3cdoc.css" type="text/css"
-      media="screen" />
-    <link rel="stylesheet" type="text/css" href="http://www.w3.org/Guide/pubrules-style.css" />
-    <link rel="stylesheet" type="text/css" href="http://www.w3.org/2006/02/charter-style.css" />
+    <link media="screen" type="text/css" href="http://www.w3.org/2005/10/w3cdoc.css"
+      rel="stylesheet" />
+    <link href="http://www.w3.org/Guide/pubrules-style.css" type="text/css" rel="stylesheet" />
+    <link href="http://www.w3.org/2006/02/charter-style.css" type="text/css" rel="stylesheet" />
     <style type="text/css">
 #warning {  
   font-size: 124%;  -epub-text-transform: lowercase;
@@ -29,11 +29,18 @@
   margin-right: 10em;
 }
 
-.todo {
-  font-style: italic;
-  background: yellow;
+.todo {  
+  font-style: italic;  
+  background-color: yellow;  
+  background-image: none;  
+  background-repeat: repeat;  
+  background-attachment: scroll;  
+  background-position: 0% 0%;
 }
-.todo:before, .todo:after { content: "@@@@";}
+
+.todo:before, .todo:after {  
+  content: "@@@@";
+}
 
 li, dd {  
   padding-top: 0em;  
@@ -41,20 +48,46 @@ li, dd {
   padding-bottom: 0.5em;  
   padding-left: 0em;
 }
-      
-ul#navbar li {
+
+ul#navbar li {  
   padding-bottom: 0em;
 }
 
-dl#deliverable-list dt { font-weight: bold;}
-dl#deliverable-list dd ul li { padding-bottom: 0em; padding-top: 0em;}
+dl#deliverable-list dt {  
+  font-weight: bold;  
+  margin-bottom: 0em;
+}
+
+dl#deliverable-list dd {  
+  padding-bottom: 0em;  
+  margin-top: 0em;
+}
+
+dl#deliverable-list dd ul {  
+  padding-bottom: 0em;  
+  margin-top: 0em;
+}
+
+dl#deliverable-list dd ul li {  
+  padding-bottom: 0em;  
+  padding-top: 0em;
+}
+
+.compl-date {  
+  font-style: italic;
+}
+      .compl-date:before {
+      content: "Planned completion date: "}
+      .compl-date:after {
+      content: "."
+      }
 
 </style> </head>
   <body>
     <p id="warning">DRAFT, under discussion, without any commitment that this
       charter would be ever accepted!</p>
     <div id="template">
-      <ul id="navbar" style="font-size: small">
+      <ul style="font-size: small" id="navbar">
         <li><a href="#scope">Scope</a></li>
         <li><a href="#deliverables">Deliverables</a></li>
         <li><a href="#coordination">Dependencies and Liaisons</a></li>
@@ -64,13 +97,13 @@ dl#deliverable-list dd ul li { padding-bottom: 0em; padding-top: 0em;}
         <li><a href="#patentpolicy">Patent Disclosures </a></li>
         <li><a href="#about">About this Charter</a></li>
       </ul>
-      <p><a href="http://www.w3.org/" shape="rect"><img height="48" width="72" alt="W3C"
-            src="http://www.w3.org/Icons/w3c_home" /></a>  </p>
+      <p><a shape="rect" href="http://www.w3.org/"><img height="48" width="72" src="http://www.w3.org/Icons/w3c_home"
+            alt="W3C" /></a>  </p>
       <h1 id="title">Digital Publishing Interest Group Charter</h1>
       <p class="mission">The <strong>mission</strong> of the Digital Publishing
         Interest Group is to provide a forum for experts in the digital
-        publishing ecosystem of electronic journals, magazines, news, standards, or book
-        publishing (authors, creators, publishers, news organizations,
+        publishing ecosystem of electronic journals, magazines, news, standards,
+        or book publishing (authors, creators, publishers, news organizations,
         booksellers, accessibility and internationalization specialists, etc.)
         for technical discussions towards a future vision of Digital Publishing.
         This Interest Group is a continuation of the previous Digital Publishing
@@ -80,41 +113,44 @@ dl#deliverable-list dd ul li { padding-bottom: 0em; padding-top: 0em;}
         message of that vision, which has already been discussed by the
         community, is that the current format- and workflow-level separation
         between offline/portable and online document publishing should be
-        diminished to zero. While this Interest Group is not chartered to specify Recommendations, it will provide technical direction, identify technical issues, and outline prototype solutions for relevant Working Groups of the W3C to finalize as Web standards. Some of
-        the work will have to be done in a strong cooperation with existing
-        Working Groups at W3C or at IDPF to ensure a full compatibility with the
-        Open Web Platform.</p>
+        diminished to zero. While this Interest Group is not chartered to
+        specify Recommendations, it will provide technical direction, identify
+        technical issues, and outline prototype solutions for relevant Working
+        Groups of the W3C to finalize as Web standards. Some of the work will
+        have to be done in a strong cooperation with existing Working Groups at
+        W3C or at IDPF to ensure a full compatibility with the Open Web
+        Platform.</p>
       <div class="noprint">
         <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/64149/join">Join
             the Digital Publishing Interest Group</a><span style="font-style: italic;">.</span><span
-            class="toadd" style="font-style: italic;"><br />
+            style="font-style: italic;" class="toadd"><br />
           </span></p>
       </div>
       <table class="summary-table">
         <tbody>
           <tr id="Duration">
-            <th rowspan="1" colspan="1">End date</th>
-            <td rowspan="1" colspan="1">1 October 2017</td>
+            <th colspan="1" rowspan="1">End date</th>
+            <td colspan="1" rowspan="1">1 October 2017</td>
           </tr>
           <tr>
-            <th rowspan="1" colspan="1">Confidentiality</th>
-            <td rowspan="1" colspan="1">Proceedings are <a href="/2005/10/Process-20051014/comm.html#confidentiality-levels"
-                shape="rect"> public </a></td>
+            <th colspan="1" rowspan="1">Confidentiality</th>
+            <td colspan="1" rowspan="1">Proceedings are <a shape="rect" href="/2005/10/Process-20051014/comm.html#confidentiality-levels">
+                public </a></td>
           </tr>
           <tr>
-            <th rowspan="1" colspan="1">Proposed Initial Chairs</th>
-            <td rowspan="1" colspan="1">Markus Gylling (IDPF and the Daisy
+            <th colspan="1" rowspan="1">Proposed Initial Chairs</th>
+            <td colspan="1" rowspan="1">Markus Gylling (IDPF and the Daisy
               Consortium)<br />
               Tzviya Siegman (John Wiley &amp; Sons, Inc.)</td>
           </tr>
           <tr>
-            <th rowspan="1" colspan="1">Initial Team Contacts<br />
+            <th colspan="1" rowspan="1">Initial Team Contacts<br />
               (FTE %: 40)</th>
-            <td rowspan="1" colspan="1"> Ivan Herman (0.4fte)</td>
+            <td colspan="1" rowspan="1"> Ivan Herman (0.4fte)</td>
           </tr>
           <tr>
-            <th rowspan="1" colspan="1">Usual Meeting Schedule</th>
-            <td rowspan="1" colspan="1">Teleconferences: Weekly <br />
+            <th colspan="1" rowspan="1">Usual Meeting Schedule</th>
+            <td colspan="1" rowspan="1">Teleconferences: Weekly <br />
               Face-to-face: As needed </td>
           </tr>
         </tbody>
@@ -216,9 +252,10 @@ dl#deliverable-list dd ul li { padding-bottom: 0em; padding-top: 0em;}
           </ul>
         </ul>
         <p>Additionally to these work items, the Interest Group will also
-          establish an active cooperation with IDPF around the work on the EPUB&nbsp;3.1. This work, <a href="https://docs.google.com/document/d/1Bvmd_wd8Tcq6MdVd8VkL308Mpfgpsv9Aw-IAwd3g0B0/edit#">chartered
+          establish an active cooperation with IDPF around the work on the
+          EPUB 3.1. This work, <a href="https://docs.google.com/document/d/1Bvmd_wd8Tcq6MdVd8VkL308Mpfgpsv9Aw-IAwd3g0B0/edit#">chartered
             by IDPF</a> in 2015, aims to include a number of backward compatible
-          changes to EPUB&nbsp;3.01, adding new features and deprecating others. Many
+          changes to EPUB 3.01, adding new features and deprecating others. Many
           of those changes aim at bringing EPUB even closer to the Open Web
           Platform and, thereby, contributing to the vision of EPUB+WEB. The
           Interest Group will act as an advisory group to IDPF on the OWP
@@ -274,57 +311,80 @@ dl#deliverable-list dd ul li { padding-bottom: 0em; padding-top: 0em;}
         <h2 id="deliverables">Deliverables</h2>
         <p>The list of deliverables below is not complete; new items may appear,
           e.g., as a result of the analysis on EPUB+WEB or questions arising in
-          conjunction with the EPUB&nbsp;3.1 work</p>
+          conjunction with the EPUB 3.1 work</p>
         <dl id="deliverable-list">
+          <dt>EPUB+WEB in General</dt>
+          <dd>
+            <ul>
+              <li>Exhaustive overview of the technical challenges raised by the
+                EPUB+WEB vision. <span class="compl-date">October 2016</span></li>
+              <li>Final version of the EPUB+WEB document, possibly published as
+                an Interest Group Note. <span style="font-style: italic;"></span><span
+                  class="compl-date"> July 2017</span></li>
+            </ul>
+          </dd>
           <dt>Accessibility:</dt>
           <dd>
             <ul>
               <li>Interest Group Note on the relationships between the needs of
                 the Publishing Industry and the various W3C Accessibility
-                Guidelines</li>
+                Guidelines. <span class="compl-date">January 2016</span></li>
+            </ul>
+          </dd>
+          <dt>STEM Publishing</dt>
+          <dd>
+            <ul>
+              <li>Publication of the findings of STEM surveys. <span class="compl-date">January
+                  2016</span></li>
             </ul>
           </dd>
           <dt>Styling, Pagination:</dt>
           <dd>
             <ul>
-              <li>Functional requirements on pagination</li>
-              <li>Analysis, with a possible prototype solution, for pagination
-                based on the latest approaches of the CSS Working Group (e.g.,
-                the outcome of the Houdini project)</li>
+              <li>Functional requirements on pagination. <span class="compl-date">April
+                  2016</span></li>
+              <li>Analysis, with a prototype solution, for pagination based on
+                the latest approaches of the CSS Working Group (e.g., the
+                outcome of the Houdini project). <span class="compl-date">February
+                  2017</span></li>
               <li>Interest Group Note on Requirements for Latin Text Layout and
-                Pagination</li>
+                Pagination. <span class="compl-date">July 2017</span></li>
             </ul>
           </dd>
           <dt>Content &amp; Markup:</dt>
           <dd>
             <ul>
-              <li>Finalization of the specification, begun in 2015, on
-                structural semantics in cooperation with the WAI Protocols and
-                Formats and the HTML Working Groups.</li>
+              <li>Finalization of the specification on structural semantics in
+                cooperation with the WAI Protocols and Formats and the HTML
+                Working Groups. <span class="compl-date">July 2016</span></li>
             </ul>
           </dd>
           <dt>Packaging:</dt>
           <dd>
             <ul>
-              <li>Functional requirements on pagination</li>
+              <li>Functional requirements on pagination. <span class="compl-date">January
+                  2016</span></li>
               <li>Analysis, with a possible prototype solution, for pagination
                 based on the latest approaches of the Web Application Working
-                Group (e.g., work on Service Workers)</li>
+                Group (e.g., work on Service Workers). <span class="compl-date">January
+                  2017</span></li>
               <li>If applicable: charter of a Working Group on Packaging for
-                Digital Publishing</li>
+                Digital Publishing. <span class="compl-date">October 2016</span></li>
             </ul>
           </dd>
           <dt>Fragment Identification:</dt>
           <dd>
             <ul>
-              <li>Functional requirements on identification and fragments</li>
+              <li>Functional requirements on identification and fragments. <span
+                  class="compl-date">January 2016</span></li>
               <li>Analysis, with a possible prototype solution, for
                 identification and fragmentation, based the latest approaches of
                 the Web Application Working Group (e.g., work on Service
                 Workers) as well as with the TAG on possible Web Architectural
-                issues.</li>
+                issues. <span class="compl-date">January 2017</span></li>
               <li>If applicable: charter of a Working Group on Fragment
-                Identifiers for Digital Publishing</li>
+                Identifiers for Digital Publishing. <span class="compl-date">October
+                  2016</span></li>
             </ul>
           </dd>
         </dl>
@@ -334,12 +394,29 @@ dl#deliverable-list dd ul li { padding-bottom: 0em; padding-top: 0em;}
             In case there is a delay in schedule, the milestones below shift
             accordingly.)</p>
           <ul>
-            <li>January 2016: publication of the Accessibility Interest Group
-              Note</li>
-            <li>February 2016: publication of the functional requirements for
-              pagination</li>
+            <li>October 2015: DPUB IG F2F meeting (in conjunction with the TPAC
+              meeting in Sapporo)</li>
+            <li>January 2016: Accessibility Interest Group Note; Packaging and
+              Fragment Identification Functional Requirements; Findings of STEM
+              surveys</li>
+            <li>February 2016:  Last Call Working Draft for the Structural
+              Semantics specification</li>
+            <li>April 2016: Functional requirements on Pagination</li>
+            <li>June 2016: DPUB IG F2F meeting (in conjunction with the IDPF
+              Digital Book Conference, probably Chicago)</li>
+            <li>July 2016: Final version of the structural semantics
+              specification as Recommendation</li>
+            <li>September 2016: DPUB IG F2F meeting (in conjunction with the
+              TPAC meeting in Lisbon)</li>
+            <li>October 2016: Exhaustive overview of EPUB+WEB technical challenges;
+              charters for a W3C WG on Packaging and for Fragment Identifiers</li>
             <li>January 2017: analysis and possible prototype solution for
-              pagination</li>
+              pagination, for packaging, and for fragment identification</li>
+            <li>February 2017: analysis, with prototype solution, of pagination</li>
+            <li>June 2017: DPUB IG F2F meeting (in conjunction with the IDPF
+              IDPF Digital Book Conference)</li>
+            <li>July 2017: EPUB+WEB White Paper publication as IG Note; Final
+              version of the Latinreq IG Note</li>
           </ul>
         </div>
       </div>
@@ -465,11 +542,12 @@ dl#deliverable-list dd ul li { padding-bottom: 0em; padding-top: 0em;}
         <h2 id="participation">Participation</h2>
         <p>Participation in the Digital Publishing Interest Group is open to all
           W3C Members. Individuals who wish to participate as Invited Experts
-          (i.e., they do not represent a W3C Member) should refer to the <a href="http://www.w3.org/2004/08/invexp.html"
-            shape="rect">policy for approval of Invited Experts</a>. Invited
-          Experts in this group are not granted access to Member-only
-          information. Effective participation in the Interest Group is expected
-          to consume one day work per week for each participant. </p>
+          (i.e., they do not represent a W3C Member) should refer to the <a shape="rect"
+            href="http://www.w3.org/2004/08/invexp.html">policy for approval of
+            Invited Experts</a>. Invited Experts in this group are not granted
+          access to Member-only information. Effective participation in the
+          Interest Group is expected to consume one day work per week for each
+          participant. </p>
         <p>The group may decide to create Task Forces within the Interest Group
           to concentrate on major relevant constituencies, for example
           electronic books, journal/magazine publishing, or educational
@@ -478,8 +556,9 @@ dl#deliverable-list dd ul li { padding-bottom: 0em; padding-top: 0em;}
         <p>There are no minimum requirements for participation in this group.
           Participants are strongly encouraged to take advantage of frequent
           opportunities to review and comment on deliverables from other groups.</p>
-        <p>The Chair may call occasional meetings consistent with the <a href="/Consortium/Process/policies#GeneralMeetings"
-            shape="rect">W3C Process requirements for meetings</a>.</p>
+        <p>The Chair may call occasional meetings consistent with the <a shape="rect"
+            href="/Consortium/Process/policies#GeneralMeetings">W3C Process
+            requirements for meetings</a>.</p>
       </div>
       <div class="communication">
         <h2 id="communication">Communication</h2>
@@ -524,22 +603,22 @@ dl#deliverable-list dd ul li { padding-bottom: 0em; padding-top: 0em;}
         <p>The Digital Publishing Interest Group provides an opportunity to
           share perspectives on the topic addressed by this charter. W3C reminds
           Interest Group participants of their obligation to comply with patent
-          disclosure obligations as set out in <a href="http://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure"
-            shape="rect">Section 6</a> of the W3C Patent Policy. While the
-          Interest Group does not produce Recommendation-track documents, when
-          Interest Group participants review Recommendation-track specifications
-          from Working Groups, the patent disclosure obligations do apply.</p>
+          disclosure obligations as set out in <a shape="rect" href="http://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure">Section
+            6</a> of the W3C Patent Policy. While the Interest Group does not
+          produce Recommendation-track documents, when Interest Group
+          participants review Recommendation-track specifications from Working
+          Groups, the patent disclosure obligations do apply.</p>
         <p>For more information about disclosure obligations for this group,
-          please see the <a href="http://www.w3.org/2004/01/pp-impl/" shape="rect">W3C
+          please see the <a shape="rect" href="http://www.w3.org/2004/01/pp-impl/">W3C
             Patent Policy Implementation</a>.</p>
       </div>
       <h2 id="about">About this Charter</h2>
       <p>This charter for the Digital Publishing Interest Group has been created
-        according to <a href="http://www.w3.org/Consortium/Process/#ReqsAllGroups"
-          shape="rect">section 6.1</a> of the <a href="http://www.w3.org/Consortium/Process"
-          shape="rect">Process Document</a>. In the event of a conflict between
-        this document or the provisions of any charter and the W3C Process, the
-        W3C Process shall take precedence.</p>
+        according to <a shape="rect" href="http://www.w3.org/Consortium/Process/#ReqsAllGroups">section
+          6.1</a> of the <a shape="rect" href="http://www.w3.org/Consortium/Process">Process
+          Document</a>. In the event of a conflict between this document or the
+        provisions of any charter and the W3C Process, the W3C Process shall
+        take precedence.</p>
       <div class="todo">
         <h2>To be done before publishing the charter</h2>
         <ul>
@@ -552,11 +631,12 @@ dl#deliverable-list dd ul li { padding-bottom: 0em; padding-top: 0em;}
       </div>
       <hr />
       <address> Ivan Herman, ivan@w3.org </address>
-      <p class="copyright"><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright"
-          shape="rect">Copyright</a> © 2015 <a href="/" shape="rect"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup>
-        (<a href="http://www.csail.mit.edu/" shape="rect"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>,
-        <a href="http://www.ercim.org/" shape="rect"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
-        <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>),
+      <p class="copyright"><a shape="rect" href="/Consortium/Legal/ipr-notice#Copyright"
+          rel="Copyright">Copyright</a> © 2015 <a shape="rect" href="/"><acronym
+            title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a
+          shape="rect" href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>,
+        <a shape="rect" href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+        <a shape="rect" href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>),
         All Rights Reserved.</p>
       <p>$Date:  $</p>
     </div>
