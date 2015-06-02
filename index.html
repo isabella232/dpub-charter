@@ -29,11 +29,18 @@
   margin-right: 10em;
 }
 
-.todo {
-  font-style: italic;
-  background: yellow;
+.todo {  
+  font-style: italic;  
+  background-color: yellow;  
+  background-image: none;  
+  background-repeat: repeat;  
+  background-attachment: scroll;  
+  background-position: 0% 0%;
 }
-.todo:before, .todo:after { content: "@@@@";}
+
+.todo:before, .todo:after {  
+  content: "@@@@";
+}
 
 li, dd {  
   padding-top: 0em;  
@@ -41,10 +48,39 @@ li, dd {
   padding-bottom: 0.5em;  
   padding-left: 0em;
 }
-      
-ul#navbar li {
+
+ul#navbar li {  
   padding-bottom: 0em;
 }
+
+dl#deliverable-list dt {  
+  font-weight: bold;  
+  margin-bottom: 0em;
+}
+
+dl#deliverable-list dd {  
+  padding-bottom: 0em;  
+  margin-top: 0em;
+}
+
+dl#deliverable-list dd ul {  
+  padding-bottom: 0em;  
+  margin-top: 0em;
+}
+
+dl#deliverable-list dd ul li {  
+  padding-bottom: 0em;  
+  padding-top: 0em;
+}
+
+.compl-date {  
+  font-style: italic;
+}
+      .compl-date:before {
+      content: "Planned completion date: "}
+      .compl-date:after {
+      content: "."
+      }
 
 </style> </head>
   <body>
@@ -61,27 +97,29 @@ ul#navbar li {
         <li><a href="#patentpolicy">Patent Disclosures </a></li>
         <li><a href="#about">About this Charter</a></li>
       </ul>
-      <p><a shape="rect" href="http://www.w3.org/"><img width="72" height="48" src="http://www.w3.org/Icons/w3c_home"
+      <p><a shape="rect" href="http://www.w3.org/"><img height="48" width="72" src="http://www.w3.org/Icons/w3c_home"
             alt="W3C" /></a>  </p>
       <h1 id="title">Digital Publishing Interest Group Charter</h1>
       <p class="mission">The <strong>mission</strong> of the Digital Publishing
         Interest Group is to provide a forum for experts in the digital
-        publishing ecosystem of electronic journals, magazines, news, or book
-        publishing (authors, creators, publishers, news organizations,
+        publishing ecosystem of electronic journals, magazines, news, standards,
+        or book publishing (authors, creators, publishers, news organizations,
         booksellers, accessibility and internationalization specialists, etc.)
         for technical discussions towards a future vision of Digital Publishing.
-        This vision has been detailed, and already discussed by the community,
-        in a separate White Paper entitled <a href="http://w3c.github.io/epubweb/">“Advancing
-          Portable Documents for the Open Web Platform: EPUB-WEB”</a>; the main
-        message of that vision is that the current format- and workflow-level
-        separation between offline/portable (e.g., EPUB) and online (Web)
-        document publishing should be diminished to zero. Whilst this Interest
-        Group is not chartered to specify Recommendations, it will provide
-        technical directions, identify technical issues and outline solutions
-        that relevant Working Groups of the W3C will have to finalize as final
-        Web standards. Some of the work will have to be done in a strong
-        cooperation with existing Working Groups at W3C or at IDPF to ensure a
-        full compatibility with the Open Web Platform.</p>
+        This Interest Group is a continuation of the previous Digital Publishing
+        Interest Group whose original <a href="http://www.w3.org/2013/02/digpubig.html">charter</a>
+        expires in September 2015, and it adds a more general vision on the
+        future of Digital Publishing to the goals to be accomplished. The main
+        message of that vision, which has already been discussed by the
+        community, is that the current format- and workflow-level separation
+        between offline/portable and online document publishing should be
+        diminished to zero. While this Interest Group is not chartered to
+        specify Recommendations, it will provide technical direction, identify
+        technical issues, and outline prototype solutions for relevant Working
+        Groups of the W3C to finalize as Web standards. Some of the work will
+        have to be done in a strong cooperation with existing Working Groups at
+        W3C or at IDPF to ensure a full compatibility with the Open Web
+        Platform.</p>
       <div class="noprint">
         <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/64149/join">Join
             the Digital Publishing Interest Group</a><span style="font-style: italic;">.</span><span
@@ -92,7 +130,7 @@ ul#navbar li {
         <tbody>
           <tr id="Duration">
             <th colspan="1" rowspan="1">End date</th>
-            <td colspan="1" rowspan="1">1 September 2017</td>
+            <td colspan="1" rowspan="1">1 October 2017</td>
           </tr>
           <tr>
             <th colspan="1" rowspan="1">Confidentiality</th>
@@ -128,125 +166,125 @@ ul#navbar li {
           by eBook readers and tablets for electronic books, magazines, journals
           and educational resources are largely based on W3C Technologies, such
           as (X)HTML, CSS, SVG, SMIL, MathML, or various Web API-s.</p>
-        <p>The advancement of EPUB3 ensured the introduction of highly dynamic
-          and interactive digital documents whose features resemble more an more
-          to what the Web generally provides. This can be seen through a new
-          breed of interactive books in, e.g., the educational domain, but the
-          same technical possibilities have the potential of revolutionizing
-          such diverse areas as journal and magazine publications (including
-          scholarly journal publishing), archival of Web content, or in-house
-          publishing of documentations by large corporations. The vision for the
-          convergence of digital documents and the Web has been summarized in a
-          separate White Paper entitled <a href="http://w3c.github.io/epubweb/">“Advancing
-            Portable Documents for the Open Web Platform: EPUB-WEB”</a> as
-          follows:</p>
+        <p>The former Digital Publishing Interest Group, that started in 2013
+          and whose original <a href="http://www.w3.org/2013/02/digpubig.html">charter</a>
+          expires in September 2015, has firmly established the presence of the
+          Digital Publishing Community within W3C and, vice versa, the presence
+          of W3C within the Digital Publishing Community. This newly chartered
+          group is a continuation of the previous group, and will continue and
+          complete the activities, e.g., in the area of <a href="https://www.w3.org/dpub/IG/wiki/Task_Forces/Accessibility">Accessibility</a>,
+          <a href="https://www.w3.org/dpub/IG/wiki/Task_Forces/Latinreq">Layout
+            &amp; Styling</a>, <a href="https://www.w3.org/dpub/IG/wiki/UseCase_Directory#Pagination.2FDOM_interaction">Pagination</a>,
+          or <a href="https://www.w3.org/dpub/IG/wiki/Task_Forces/Content_and_Markup">Content
+            &amp; Markup</a>. The results of the previous Interest Group will
+          provide a strong basis for the work of this new Interest Group. </p>
+        <p>However, the new group will also concentrate on issues that have come
+          to the fore as a result of the technical evolution around digital
+          documents the past few years. Indeed, the advancement of EPUB3 ensured
+          the introduction of highly dynamic and interactive digital documents
+          whose features resemble more an more to what the Web generally
+          provides. This can be seen through a new breed of interactive books
+          in, e.g., the educational domain, but the same technical possibilities
+          have the potential of revolutionizing such diverse areas as journal
+          and magazine publications (including scholarly journal publishing),
+          archival of Web content, or in-house publishing of documentations by
+          large corporations. The vision for the convergence of digital
+          documents and the Web has been summarized in a separate White Paper,
+          entitled <a href="http://w3c.github.io/epubweb/draft/">“Advancing
+            Portable Documents for the Open Web Platform: EPUB+WEB”</a>,
+          co-authored by the experts of W3C and the IDPF, as follows:</p>
         <blockquote>
-          <p>Our vision for EPUB-WEB is that portable documents become fully
-            native citizens of the Open Web Platform. In this vision, the
-            current format- and workflow-level separation between
-            offline/portable (EPUB) and online (Web) document publishing is
-            diminished to zero. These are merely two dynamic manifestations of
-            the same publication: content authored with online use as the
-            primary mode can easily be saved by the user for offline reading in
-            portable document form. Content authored primarily for use as a
-            portable document can be put online, without any need for
-            refactoring the content. Publishers can choose to utilize either or
-            both of these publishing modes, and users can choose either or both
-            of these consumption modes. Essential features flow seamlessly
-            between online and offline modes; examples include cross-references,
-            user annotations, access to online databases, as well as licensing
-            and rights management.</p>
+          <p>Our vision […] is that portable documents become fully native
+            citizens of the Open Web Platform. In this vision, the current
+            format- and workflow-level separation between offline/portable […]
+            and online […] document publishing is diminished to zero. These are
+            merely two dynamic manifestations of the same publication: content
+            authored with online use as the primary mode can easily be saved by
+            the user for offline reading in portable document form. […]
+            Publishers can choose to utilize either or both of these publishing
+            modes, and users can choose either or both of these consumption
+            modes. Essential features flow seamlessly between online and offline
+            modes; examples include cross-references, user annotations, access
+            to online databases, as well as licensing and rights management.</p>
         </blockquote>
-        <p>@@@@change the quote to remove EPUB-WEB reference@@@Turning this vision into reality, however, requires significant
+        <p>Turning this vision into reality, however, requires significant
           technical work. Some of the issues are already addressed in existing
           W3C Working Groups (e.g., the CSS, HTML5, or the Web Applications
           Working Groups) but it is very important that those activities take
-          into account the specificities, requirements, etc., of the Digital
+          into account the specifics, requirements, etc., of the Digital
           Publishing Industry through feedbacks, comments, and direct
-          participation in those Working Groups. There are also a number of
-          technical challenges specific to this vision that may necessitate
-          targeted specification work. A first set of technical challenges have
-          been identified in the White Paper, and are added here for an easier
-          reference:</p>
+          participation in those Working Groups. Furthermore, there are also a
+          number of technical challenges specific to this vision that will also
+          necessitate targeted specification work. A <a href="http://w3c.github.io/epubweb/draft/#achieving-convergence-work-areas">first
+            set of technical challenges</a> have been identified in the White
+          Paper; the most important ones are:</p>
         <ul>
           <li><a href="http://w3c.github.io/epubweb/#generic-archive-format-for-the-portable-offline-state">Generic
               archive format for the portable/offline state</a></li>
-          <li><a href="http://w3c.github.io/epubweb/#capturing-overall-publication-structure">Capturing
-              overall publication structure</a></li>
           <li><a href="http://w3c.github.io/epubweb/#document-and-fragment-identification">Document
               and fragment identification</a></li>
-          <li><a href="http://w3c.github.io/epubweb/#metadata-discovery">Metadata:
-              discovery</a></li>
           <li><a href="http://w3c.github.io/epubweb/#styling-and-layout-pagination">Styling
               and Layout, Pagination</a></li>
-          <li><a href="http://w3c.github.io/epubweb/#security-and-privacy-models">Security
-              and privacy models</a></li>
-          <li><a href="http://w3c.github.io/epubweb/#presentation-control-and-personalization">Presentation
-              Control and Personalization</a></li>
-          <li><a href="http://w3c.github.io/epubweb/#models-for-embracing-domain-specific-restrictions-and-extensions">Models
-              for embracing domain-specific restrictions and extensions</a></li>
         </ul>
-        <p>However, it is not clear, at this moment, which of these (or other)
-          challenges will require targeted work and which should be done in
-          cooperation with existing Working Groups. In light of this, the goal
-          of this Interest Group is to:</p>
+        <p>It is not yet clear, and will require further and more detailed
+          analysis, which of these (or other) challenges will require targeted
+          work by this Interest Group, should be done in cooperation with
+          existing Working Groups, or will require the creation of new Working
+          Groups. In light of this, the goal of this Interest Group is to:</p>
         <ul>
-          <li>Provide an in-depth and exhaustive overview of the technical
-            challenges that should be solved to make the EPUB-WEB vision a
-            reality.</li>
-          <li>Determine, and take the necessary actions, whether these
+          <li>provide an in-depth and exhaustive overview of the technical
+            challenges that should be solved to make the EPUB+WEB vision a
+            reality;</li>
+          <li>determine, and take the necessary actions in the form of, e.g.,
+            prototyping technical solutions or specifications, whether these
             challenges should be addressed through </li>
           <ul>
-            <li>new Working Groups at W3C (in which case the Interest Group
-              should actively contribute to the chartering of those groups), or</li>
+            <li>new Working Groups at W3C, in which case the Interest Group will
+              actively contribute to the chartering of those groups, or</li>
             <li>cooperation with other W3C groups (in which case the Interest
-              Group should provide feedbacks, comments, and requirements to
-              those Groups to ensure the necessary convergence, and should
-              encourage members of the Interest Group to actively participate in
-              those Groups), or</li>
+              Group will provide feedbacks, comments, and requirements to those
+              Groups to ensure the necessary convergence, and will encourage
+              members of the Interest Group to actively participate in those
+              Groups), or</li>
             <li>the publication of non-normative documents, like Interest Group
-              Notes, to be published by this Interest Group, or</li>
+              Notes, of prototypical technical solutions, or</li>
             <li>by Working Groups at other organizations, like the International
               Digital Publishing Forum (IDPF) or the Book Industry Study Group
-              (BISG) (in which case strong liaisons should be established with
-              those groups).</li>
+              (BISG), in which case strong liaisons will established with those
+              groups.</li>
           </ul>
         </ul>
-        <p>Additionally to these work items, the Interest Group should also plan
-          to have an active cooperation with the work on the EPUB 3.1 revision
-          at the IDPF. This work, <a href="https://docs.google.com/document/d/1Bvmd_wd8Tcq6MdVd8VkL308Mpfgpsv9Aw-IAwd3g0B0/edit#">chartered</a>
-          in 2015, aims to include a number of backward compatible changes to
-          EPUB 3.01, adding new features and deprecating others. Many of those
-          changes aim at bringing EPUB even closer to the Open Web Platform and,
-          thereby, contributing to the vision of EPUB-WEB. The Interest Group
-          would act as an advisory group to IDPF on the OWP related features, as
-          well as a conduit to other groups at W3C. <span class="todo">Refresh
-            the link to the EPUB3.1 charter when it is final!</span></p>
-        The group is a continuation, under this new charter, of the Digital
-        Publishing Interest Group that started in 2013 and whose original <a href="http://www.w3.org/2013/02/digpubig.html">charter</a>
-        expires in September 2015. That group has firmly established the
-        presence of the Digital Publishing Community within W3C and, vice versa,
-        the presence of W3C within the Digital Publishing Community. The results
-        of the previous Interest Group will provide a strong basis for the work
-        of this new Interest Group.
+        <p>Additionally to these work items, the Interest Group will also
+          establish an active cooperation with IDPF around the work on the
+          EPUB 3.1. This work, <a href="https://docs.google.com/document/d/1Bvmd_wd8Tcq6MdVd8VkL308Mpfgpsv9Aw-IAwd3g0B0/edit#">chartered
+            by IDPF</a> in 2015, aims to include a number of backward compatible
+          changes to EPUB 3.01, adding new features and deprecating others. Many
+          of those changes aim at bringing EPUB even closer to the Open Web
+          Platform and, thereby, contributing to the vision of EPUB+WEB. The
+          Interest Group will act as an advisory group to IDPF on the OWP
+          related features, as well as a conduit to other groups at W3C.</p>
         <h3>Success Criteria</h3>
         <br />
         <p>The group has succeeded if</p>
         <ul>
+          <li>The group has successfully completed the work started by the
+            previous version of the Interest Group on, e.g., Accessibility,
+            Pagination, STEM, or Content &amp; Markup.</li>
           <li>A clear migration path towards the vision expressed in the
-            EPUB-WEB White Paper has been established, including a clear view of
+            EPUB+WEB White Paper has been established, including a clear view of
             the technical challenges and issues to solve.</li>
           <li>A fruitful cooperation is established between the Interest Group
             and the relevant Working Groups at W3C, reflected by a successful
             harmonization between the needs of the publishing industry at large,
-            and EPUB-WEB in particular, and constituents of the Open Web
+            and EPUB+WEB in particular, and constituents of the Open Web
             Platform. </li>
           <li>The group has successfully contributed establishing the Working
-            Group(s) essential in turn the EPUB-WEB vision a reality.</li>
+            Group(s) essential in turn the EPUB+WEB vision a reality (if
+            applicable).</li>
           <li>Members of the Interest Group join the relevant Working Groups to
             participate and possibly drive the development of the specific work
             items that are in development and are considered to be important for
-            the EPUB-WEB vision.</li>
+            the EPUB+WEB vision.</li>
           <li>Production of stable documents addressing the work items listed in
             the <a href="#deliverables">Deliverables’</a> section.</li>
           <li>A productive and stable set of liaisons is set up between the
@@ -257,8 +295,8 @@ ul#navbar li {
             external organizations can convey their requirements to current and
             future Working Groups. These liaisons should remain active even when
             the Interest Group is closed.</li>
-          <li>The Interest Group has provided useful advice an help to IDPF in
-            developing EPUB 3.1.</li>
+          <li>The group has provided useful contribution to IDPF in developing
+            EPUB 3.1.</li>
         </ul>
         <div>
           <h3>Out of Scope</h3>
@@ -270,15 +308,124 @@ ul#navbar li {
             cases that are relevant exclusively to non-W3C standards and
             specifications (e.g., Unicode), although the evolution of those
             Specifications should be followed as they may influence the
-            deliverables of the Group.</p>
+            deliverables of this Group.</p>
         </div>
       </div>
       <div>
         <h2 id="deliverables">Deliverables</h2>
-        <p class="todo">T.B.D.</p>
+        <p>The list of deliverables below is not complete; new items may appear,
+          e.g., as a result of the analysis on EPUB+WEB, questions arising in
+          conjunction with the EPUB 3.1 work, or as outcome of the specific
+          works in IG Task Forces.</p>
+        <dl id="deliverable-list">
+          <dt>EPUB+WEB in General</dt>
+          <dd>
+            <ul>
+              <li>Exhaustive overview of the technical challenges raised by the
+                EPUB+WEB vision. <span class="compl-date">October 2016</span></li>
+              <li>Final version of the EPUB+WEB document, possibly published as
+                an Interest Group Note. <span style="font-style: italic;"></span><span
+                  class="compl-date"> July 2017</span></li>
+            </ul>
+          </dd>
+          <dt>Accessibility:</dt>
+          <dd>
+            <ul>
+              <li>Interest Group Note on the relationships between the needs of
+                the Publishing Industry and the various W3C Accessibility
+                Guidelines. <span class="compl-date">January 2016</span></li>
+            </ul>
+          </dd>
+          <dt>STEM Publishing</dt>
+          <dd>
+            <ul>
+              <li>Publication of the findings of STEM surveys. <span class="compl-date">January
+                  2016</span></li>
+            </ul>
+          </dd>
+          <dt>Styling, Pagination:</dt>
+          <dd>
+            <ul>
+              <li>Functional requirements on pagination. <span class="compl-date">April
+                  2016</span></li>
+              <li>Analysis, with a prototype solution, for pagination based on
+                the latest approaches of the CSS Working Group (e.g., the
+                outcome of the Houdini project). <span class="compl-date">February
+                  2017</span></li>
+              <li>Interest Group Note on Requirements for Latin Text Layout and
+                Pagination. <span class="compl-date">July 2017</span></li>
+            </ul>
+          </dd>
+          <dt>Content &amp; Markup:</dt>
+          <dd>
+            <ul>
+              <li>Finalization of the specification on structural semantics in
+                cooperation with the WAI Protocols and Formats and the HTML
+                Working Groups. <span class="compl-date">July 2016</span></li>
+            </ul>
+          </dd>
+          <dt>Packaging:</dt>
+          <dd>
+            <ul>
+              <li>Functional requirements on pagination. <span class="compl-date">January
+                  2016</span></li>
+              <li>Analysis, with a possible prototype solution, for pagination
+                based on the latest approaches of the Web Application Working
+                Group (e.g., work on Service Workers). <span class="compl-date">January
+                  2017</span></li>
+              <li>If applicable: charter of a Working Group on Packaging for
+                Digital Publishing. <span class="compl-date">October 2016</span></li>
+            </ul>
+          </dd>
+          <dt>Fragment Identification:</dt>
+          <dd>
+            <ul>
+              <li>Functional requirements on identification and fragments. <span
+                  class="compl-date">January 2016</span></li>
+              <li>Analysis, with a possible prototype solution, for
+                identification and fragmentation, based the latest approaches of
+                the Web Application Working Group (e.g., work on Service
+                Workers) as well as with the TAG on possible Web Architectural
+                issues. <span class="compl-date">January 2017</span></li>
+              <li>If applicable: charter of a Working Group on Fragment
+                Identifiers for Digital Publishing. <span class="compl-date">October
+                  2016</span></li>
+            </ul>
+          </dd>
+        </dl>
         <div>
           <h3 id="timeline">Timeline</h3>
-          <p class="todo">T.B.D.</p>
+          <p>The timelines below are based on a starting date of October 2015.
+            In case there is a delay in schedule, the milestones below shift
+            accordingly. </p>
+          <p>The timelines reflect the deliverables listed in the <a href="#deliverables">previous
+              section</a>; new deliverables may be defined during the lifetime
+            of the group that may modify/extend the list of milestones.</p>
+          <ul>
+            <li>October 2015: DPUB IG F2F meeting (in conjunction with the TPAC
+              meeting in Sapporo)</li>
+            <li>January 2016: Accessibility Interest Group Note; Packaging and
+              Fragment Identification Functional Requirements; Findings of the
+              STEM surveys</li>
+            <li>February 2016:  Last Call Working Draft for the Structural
+              Semantics specification</li>
+            <li>April 2016: Functional requirements on Pagination</li>
+            <li>June 2016: DPUB IG F2F meeting (in conjunction with the IDPF
+              Digital Book Conference, probably Chicago)</li>
+            <li>July 2016: Final version of the structural semantics
+              specification as Recommendation</li>
+            <li>September 2016: DPUB IG F2F meeting (in conjunction with the
+              TPAC meeting in Lisbon)</li>
+            <li>October 2016: Exhaustive overview of EPUB+WEB technical challenges;
+              charters for a W3C WG on Packaging and for Fragment Identifiers</li>
+            <li>January 2017: analysis and possible prototype solution for
+              pagination, for packaging, and for fragment identification</li>
+            <li>February 2017: analysis, with prototype solution, of pagination</li>
+            <li>June 2017: DPUB IG F2F meeting (in conjunction with the IDPF
+              IDPF Digital Book Conference)</li>
+            <li>July 2017: EPUB+WEB White Paper publication as IG Note; Final
+              version of the Latinreq IG Note</li>
+          </ul>
         </div>
       </div>
       <div class="dependencies">
@@ -307,7 +454,9 @@ ul#navbar li {
               Group</a></dt>
           <dd>The possibility of adding and maintaining annotations on portable
             documents is crucial in some publication areas (e.g., educational
-            publications or scholarly articles).</dd>
+            publications or scholarly articles). The work on robust anchoring in
+            that Working Group will also contribute to the Fragment Identifier
+            work planned by the Interest Group.</dd>
           <dt><a href="https://www.w3.org/Fonts/WG/">WebFonts Working Group</a></dt>
           <dd>High quality fonts are fundamental for many areas within the
             digital publication industry.</dd>
@@ -359,7 +508,7 @@ ul#navbar li {
             Accessibility in general.</dd>
           <dt><a href="https://www.w3.org/2001/tag/">Technical Architecture
               Group</a></dt>
-          <dd>Some of the issues raised by the EPUB-WEB vision (e.g., linking,
+          <dd>Some of the issues raised by the EPUB+WEB vision (e.g., linking,
             packaging) are related to overall Web Architectural issues and
             principles.</dd>
         </dl>
@@ -371,14 +520,14 @@ ul#navbar li {
             <dd>IDPF is the body where the major eBook standard, EPUB, is
               developed and maintained. IDPF is also part of a joint (temporary)
               committee with ISO to work on an ISO version of EPUB3. IDPF is the
-              major partner in developing the EPUB-WEB vision.</dd>
+              major partner in developing the EPUB+WEB vision.</dd>
             <dt><a href="https://www.bisg.org">Book Industry Study Group (BISG)</a></dt>
             <dd>BISG’s involvement with Book metadata vocabulary development, as
               well as their testing/evaluating platforms for EPUB, make them a
               major player in the electronic books ecosystem.</dd>
             <dt><a href="http://editeur.org/">EDItEUR</a></dt>
             <dd>The body responsible for the main metadata vocabulary used by
-              (traditional) books.</dd>
+              the Book Industry.</dd>
             <dt><a href="http://www.iptc.org">International Press and
                 Telecommuncations Council (IPTC)</a></dt>
             <dd>IPTC regroups the news publishing industry.</dd>
@@ -480,6 +629,16 @@ ul#navbar li {
           Document</a>. In the event of a conflict between this document or the
         provisions of any charter and the W3C Process, the W3C Process shall
         take precedence.</p>
+      <div class="todo">
+        <h2>To be done before publishing the charter</h2>
+        <ul>
+          <li>References to the draft EPUB+WEB should be exchanged against the
+            final one (including an update of the White Paper proper)</li>
+          <li>References to the final charter of EPUB3.1 instead of the google
+            doc one</li>
+          <li>Remove this section :-)</li>
+        </ul>
+      </div>
       <hr />
       <address> Ivan Herman, ivan@w3.org </address>
       <p class="copyright"><a shape="rect" href="/Consortium/Legal/ipr-notice#Copyright"
