@@ -9,77 +9,91 @@
     <link href="http://www.w3.org/Guide/pubrules-style.css" type="text/css" rel="stylesheet" />
     <link href="http://www.w3.org/2006/02/charter-style.css" type="text/css" rel="stylesheet" />
     <style type="text/css">
-#warning {  
-  font-size: 124%;  -epub-text-transform: lowercase;
-  text-transform: lowercase;  
-  font-variant: small-caps;  
-  border-top-width: medium;  
-  border-right-width: medium;  
-  border-bottom-width: medium;  
-  border-left-width: medium;  
-  border-top-style: ridge;  
-  border-right-style: ridge;  
-  border-bottom-style: ridge;  
-  border-left-style: ridge;  
-  padding-top: 0.5em;  
-  padding-right: 0.5em;  
-  padding-bottom: 0.5em;  
-  padding-left: 0.5em;  -webkit-box-shadow: 5px 5px 0px 0px gray;
-  box-shadow: 5px 5px 0px 0px gray;  
-  margin-right: 10em;
-}
+      #warning {  
+        font-size: 124%;  -epub-text-transform: lowercase;
+        text-transform: lowercase;  
+        font-variant: small-caps;  
+        border-top-width: medium;  
+        border-right-width: medium;  
+        border-bottom-width: medium;  
+        border-left-width: medium;  
+        border-top-style: ridge;  
+        border-right-style: ridge;  
+        border-bottom-style: ridge;  
+        border-left-style: ridge;  
+        padding-top: 0.5em;  
+        padding-right: 0.5em;  
+        padding-bottom: 0.5em;  
+        padding-left: 0.5em;  -webkit-box-shadow: 5px 5px 0px 0px gray;
+        box-shadow: 5px 5px 0px 0px gray;  
+        margin-right: 10em;
+      }
 
-.todo {  
-  font-style: italic;  
-  background-color: yellow;  
-  background-image: none;  
-  background-repeat: repeat;  
-  background-attachment: scroll;  
-  background-position: 0% 0%;
-}
+      .todo {  
+        font-style: italic;  
+        background-color: yellow;  
+        background-image: none;  
+        background-repeat: repeat;  
+        background-attachment: scroll;  
+        background-position: 0% 0%;
+      }
 
-.todo:before, .todo:after {  
-  content: "@@@@";
-}
+      .todo:before, .todo:after {  
+        content: "@@@@";
+      }
 
-li, dd {  
-  padding-top: 0em;  
-  padding-right: 0em;  
-  padding-bottom: 0.5em;  
-  padding-left: 0em;
-}
+      li, dd {  
+        padding-top: 0em;  
+        padding-right: 0em;  
+        padding-bottom: 0.5em;  
+        padding-left: 0em;
+      }
 
-ul#navbar li {  
-  padding-bottom: 0em;
-}
+      ul#navbar li {  
+        padding-bottom: 0em;
+      }
 
-dl#deliverable-list dt {  
-  font-weight: bold;  
-  margin-bottom: 0em;
-}
+      dl#deliverable-list dt {  
+        font-weight: bold;  
+        margin-bottom: 0em;
+      }
 
-dl#deliverable-list dd {  
-  padding-bottom: 0em;  
-  margin-top: 0em;
-}
+      dl#deliverable-list dd {  
+        padding-bottom: 0em;  
+        margin-top: 0em;
+      }
 
-dl#deliverable-list dd ul {  
-  padding-bottom: 0em;  
-  margin-top: 0em;
-}
+      dl#deliverable-list dd ul {  
+        padding-bottom: 0em;  
+        margin-top: 0em;
+      }
 
-dl#deliverable-list dd ul li {  
-  padding-bottom: 0em;  
-  padding-top: 0em;
-}
+      dl#deliverable-list dd ul li {  
+        padding-bottom: 0em;  
+        padding-top: 0em;
+      }
 
-.compl-date {  
-  font-style: italic;
-}
+      .note {
+        font-style: italic;
+        font-size: 90%;
+        margin-left: 2em;
+        margin-right: 2em;
+      }
+
+      .note:before {
+        content: "Note: ";
+      }
+
+
+      .compl-date {  
+        font-style: italic;
+      }
+
       .compl-date:before {
-      content: "Planned completion date: "}
+        content: "Planned completion date: "
+      }
       .compl-date:after {
-      content: "."
+        content: "."
       }
 
 </style> </head>
@@ -316,6 +330,10 @@ dl#deliverable-list dd ul li {
           e.g., as a result of the analysis on EPUB+WEB, questions arising in
           conjunction with the EPUB 3.1 work, or as outcome of the specific
           works in IG Task Forces.</p>
+
+        <p>For the planned Interest Group Notes, the list below only gives the completion dates. However, the group may also 
+        publish, as the work advances, intermediate versions as Interest Group Working Drafts.</p>
+
         <dl id="deliverable-list">
           <dt>EPUB+WEB in General</dt>
           <dd>
@@ -441,6 +459,9 @@ dl#deliverable-list dd ul li {
           find any issues and problems worth raising after all. The list of 
           these groups, with a short description of the technical area of 
           interest, includes:</p>
+
+        <p class="note">Some of the groups may change their name (e.g., “Protocols and Formats”) or may be merged (“HTML” and “Web Applications”) by the time this charter is, possibly, accepted by the Advisory Committee of W3C. If this happen, the necessarily editorial changes will be done by the time the Interest Group officially starts.</p>
+
         <dl>
           <dt><a href="https://www.w3.org/Style/CSS/members">CSS Working Group</a></dt>
           <dd>CSS has a fundamental importance in formatting any type of digital
@@ -575,11 +596,11 @@ dl#deliverable-list dd ul li {
         <p>This group primarily conducts its work on the mailing list<span style="font-style: italic;">
             public-digipub-ig@w3.org </span><span class="toadd"></span>with <a
             href="http://lists.w3.org/Archives/Public/public-digipub-ig/">public
-            archives</a>. Administrative tasks may be conducted in Member-only
+            archives</a>, as well as public GitHub repositories. Administrative tasks may be conducted in Member-only
           communications. </p>
-        <p>Information about the group (deliverables, participants, face-to-face
+        <p>Public information about the group (deliverables, participants, face-to-face
           meetings, teleconferences, etc.) is available from the <a href="http://www.w3.org/dpub/IG/">Digital
-            Publishing Interest Group home page</a></p>
+            Publishing Interest Group home page</a>.</p>
         <p>The role of <a href="#depliaisons">dependencies and liaisons</a>
           with various external groups is fundamental to the success of this
           Interest Group; the group will therefore set up active liaisons early
